@@ -2,18 +2,6 @@
         /*---------- General Styles -------------*/
 /*=========================================================================== */
 
-/*Fonts*/
-@import 'https://fonts.googleapis.com/css?family=Marcellus';
-/*font-family: 'Marcellus', serif;*/
-
-@import 'https://fonts.googleapis.com/css?family=Cormorant+SC:300,400,500,600,700';
-/*font-family: 'Cormorant SC', serif;*/
-
-@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900';
-/*font-family: 'Raleway', sans-serif !important;*/
-
-
-
 html,
 body,
 div,
@@ -35,8 +23,8 @@ html, body {
     margin: 0;
     font-size: .8rem;
 
-/*    font-family: 'Dosis', sans-serif !important;*/
-    font-family: 'Cormorant', serif;
+    font-family: 'Dosis', sans-serif !important;
+/*    font-family: 'Cormorant', serif;*/
 
 
     -webkit-background-size: cover;
@@ -289,75 +277,5 @@ button {
     border-radius: 50%;
     overflow: hidden;
 }
-
-/*-----------------------------------------*/
-/*text sizez*/
-.bld {
-    font-weight: bolder!important;
-}
-
-.st-txt {
-    font-size: .9rem !important;
-    font-weight: 500 !important;
-    letter-spacing: -.5px
-}
-
-.st-txt2 {
-    font-size: .8rem !important;
-    font-weight: 600 !important;
-    letter-spacing: -.5px
-}
-
-.st-txt3 {
-    font-size: .9rem !important;
-    font-weight: 300 ;
-    letter-spacing: -.5px
-}
-
-.st-txt4 {
-    font-size: 1.1rem !important;
-    font-weight: 300 ;
-    letter-spacing: -.5px
-}
-
-.st-txt5 {
-    font-size: .85rem !important;
-    font-weight: 400 ;
-    letter-spacing: -.4px
-}
-
-.st-txt6 {
-    font-size: 1.3rem !important;
-    font-weight: 600 ;
-    letter-spacing: -.4px
-}
-
-.st-txt7 {
-     font-size: .8rem !important;
-    font-weight: 400 ;
-    letter-spacing: -.4px
-}
-
-.st-txt8 {
-
-    font-weight: 300 ;
-    letter-spacing: -.4px;
-/*    color: #b4cb34;*/
-}
-
-.st-txt9 {
-    font-size: 2rem !important;
-    font-weight: 400 ;
-    letter-spacing: -.3px;
-/*    color: #ff8c00;*/
-}
-
-.st-txt10 {
-    font-size: 1.5rem !important;
-    font-weight: 300 ;
-    letter-spacing: -.3px;
-    ;
-}
-
 
 

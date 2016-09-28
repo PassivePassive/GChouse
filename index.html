@@ -18,35 +18,40 @@
 
     <!--- Foundation --->
     <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
 
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.css" >
+
 
     <!-- ben -->
     <link rel="stylesheet" type="text/css" href="ben/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="ben/css/main.css" />
     <link rel="stylesheet" type="text/css" href="ben/css/animate.css" />
-<!--    <link rel="stylesheet" type="text/css" href="ben/css/bg.css" />-->
-<!--    <link rel="stylesheet" type="text/css" href="ben/css/water.css">-->
     <link rel="stylesheet" type="text/css" href="ben/css/component.css">
 	<link rel="stylesheet" type="text/css" href="ben/css/style2.css" />
 
+    <!-- mobileonly -->
+<!--    <link rel="stylesheet" type="text/css" href="stickynav/style.css" />-->
+    <link rel="stylesheet" type="text/css" href="stickynav/dist/slicknav.css" />
 
-<!--    <link href="css/sequence-theme.two-up.css" rel="stylesheet" media="all">-->
-  <!--[if lt IE 9]>
-    <link href="css/sequence-theme.two-up-ie8.css" rel="stylesheet" media="all"> <![endif]-->
+    <!-- filterizr -->
+    <link rel="stylesheet" type="text/css" href="filterizr/css/index.css" />
 
-    <link href="css/jquery.bxslider.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" type="text/css" href="css/styles2.css" media="all and (min-width: 769px)" />
-<!--    <link rel="stylesheet" type="text/css" href="css/styles_mobile.css" media="all and (max-width: 768px)" />-->
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="css/styles2.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css" media="all" />
 
     <style>
-        .no-js #loader { display: none;  }
-        .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+        .no-js #loader {
+            display: none;
+        }
+
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
         .se-pre-con {
             position: fixed;
             left: 0px;
@@ -56,10 +61,6 @@
             z-index: 9999;
             background: url(images/Preloader_6.gif) center no-repeat #fff;
         }
-
-        /*-- Cormorant SC-- */
-        @import 'https://fonts.googleapis.com/css?family=Cormorant+SC:300,400,500,600,700';
-        @import 'https://fonts.googleapis.com/css?family=Cormorant:300,400,500,600,700';
 
         html,
         body,
@@ -99,6 +100,10 @@
 
         }
 
+        .mobileOnly {
+            display: none;
+        }
+
         main {
             height: auto;
             position: relative;
@@ -114,6 +119,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/modernizr.js" type="text/javascript"></script>
     <script src="ben/js/wow.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
     <!-- preloader -->
     <script>
@@ -133,6 +139,7 @@
 
 <!-- ================================ -->
 <!--- SCRIPTS ----->
+<!--
 <script language="javascript">
     document.onmousedown=disableclick;
     status="Ops this feature is disaled";
@@ -145,6 +152,7 @@
        }
     }
 </script>
+-->
 <script>
 function showDiv() {
     document.getElementById('orderedProductsTbl').style.display = "block";
@@ -156,121 +164,34 @@ function closeDiv() {
     new WOW().init();
 </script>
 
-<!-- ================================ -->
-<!--- MODALS ----->
-    <div class="reveal f-center" id="contactFormModal" data-reveal>
-
-        <div class="row columns contain_ f-vert">
-            <!-- logo -->
-            <div class="logoHolder desktopOnly row columns">
-                <div class="logo f-center">
-                    <p class="logoTitle black_">ISHI DIGITAL</p>
-                </div>
-            </div>
-
-            <!-- form -->
-            <form>
-                <!--title-->
-<!--
-                <div class="row columns form-ttl f-center">
-                    <p class="">Fill in the form below and we'll get back to you as soon as possible...</p>
-                </div>
--->
-
-                <!--content-->
-                <div class="row columns form-cntnt">
-
-                    <!-- names -->
-                    <div class="row">
-                        <div class="small-5 columns">
-                            <label><input type="text" placeholder="First Name" name="firstname">
-                            </label>
-                        </div>
-                        <div class="small-2 columns"></div>
-                        <div class="small-5 columns ">
-                            <label><input type="text" placeholder="Last Name" name="lastname">
-                            </label>
-                        </div>
-
-                    </div>
-
-                    <!-- email -->
-                    <div class="row">
-                        <div class="small-12 columns">
-                            <label><input type="email" placeholder="Email Address" name="email">
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Subject -->
-                    <div class="row">
-                        <div class="small-10 columns">
-                            <label><input type="text" placeholder="Subject" name="subject">
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Message -->
-                    <div class="row">
-                        <div class="small-12 columns">
-                            <label><input type="textarea" placeholder="Your Message" name="message">
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Submit -->
-                    <div class="row f-center">
-
-                        <div class="small-5 columns">
-                            <label class="btn_">
-                                <input type="submit" class="button" value="Submit">
-                            </label>
-                        </div>
-                    </div>
-
-                </div>
-            </form>
-
-        </div>
-
-
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
 
 <!-- ================================ -->
 
 <div id="whole">
 
-<!--    <div class="homeLoad"></div>-->
+    <!------------------------------------------------------------->
+    <!-- Floating Icons -->
+    <!------------------------------------------------------------->
+
+    <!-- scroll up button -->
+    <div class="expanded row columns Up_ f-vert" >
+        <div class="upText_">
+            back to top
+        </div>
+        <a class="expanded row columns scrollDown_ f-center" href="#">
+          <div class="scrollCue scrollUp_ f-center">
+                <span></span>
+          </div>
+        </a>
+    </div>
+
+
 
     <!-- main content -->
-    <main class="expanded row columns">  
-        
-        <!------------------------------------------------------------->
-        <!-- Floating Icons -->
-        <!------------------------------------------------------------->
-
-        <!-- scroll up button -->
-        <div class="expanded row columns Up_ f-vert" >
-            <div class="upText_">
-                back to top
-            </div>
-            <a class="expanded row columns scrollDown_ f-center" href="#">
-              <div class="scrollCue scrollUp_ f-center">
-                    <span></span>
-              </div>
-            </a>
-        </div>
-
-
+    <main class="expanded row columns container">
     
         <!------------------------------------------------------------->
         <!-- PAGE 1 -->
-        <!------------------------------------------->
-
-        <!--- CONTENT -->
         <!------------------------------------------->
         <div id="p_one" class="expanded row columns clearfix">
 
@@ -282,158 +203,136 @@ function closeDiv() {
 
             <div class="expanded row columns homeHeader">
 
-
-
                 <!--LOGO - desktopOnly-->
                 <div class="logoHolder row columns">
                     <div class="logo f-center">
-                        <p class="logoTitle black_ ">ISHI DIGITAL</p>
+                        <p class="logoTitle black_">APARTMENT DETAILS</p>
                     </div>
                 </div>
 
                 <!-- NAV -->
                 <div id="header" class="black_ f-center expanded row columns nav-cont">
+
+                    <!-- Filter Controls - Simple Mode -->
                     <nav id="nav_" class="">
-                        <ul class="head_ f-center div_ ul_">
-                              <li class="tabs_">
-                                  <a class="" href="#about">WHY 'ISHI'</a>
+
+                        <!--- DESKTOP ONLY --->
+                        <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+            for an unfiltered gallery and then the values of your categories to filter between them -->
+                        <ul class="simplefilter desktopOnly head_ f-center div_ ul_">
+                              <li class="tabs_ active" data-filter="all">
+                                  ALL
                               </li>
-                              <li class="tabs_">
-                                  <a class="" href="#services">WHAT WE DO</a>
+                              <li class="tabs_" data-filter="1">
+                                  LIVING ROOM
                               </li>
 
-                              <li class="tabs_ ">
-                                  <a href="#p_two">IMAGE LIBRARY</a>
+                              <li class="tabs_" data-filter="2">
+                                  BEDROOM
                               </li>
+
+                              <li class="tabs_" data-filter="3">
+                                  KITCHEN
+                              </li>
+
+                              <li class="tabs_" data-filter="4">
+                                  BATHROOM
+                              </li>
+
+                              <li class="tabs_" data-filter="5">
+                                  OTHER
+                              </li>
+
                         </ul><!-- head_ end -->
-                    </nav>
-                    <div class="head_ f-center div_ noul_">
-                          <div class="tabs_">
-                              <a href="http://blogishidigital.herokuapp.com/" target="_blank">BLOG</a>
-                          </div>
 
-                          <div class="tabs_">
-                              <a href="https://www.instagram.com/ishigallery_ke/" target="_blank">ISHI GALLERY</a>
-                          </div>
+                        <!--- MOBILE ONLY --->
+                        <div class="mobileMenu_ mobileOnly">
+                            <!-- logo -->
+<!--
+                            <div class="logoHolder expanded row columns">
+                                <div class="logo f-center">
+                                    <p class="logoTitle black_">APARTMENT DETAILS</p>
+                                </div>
+                            </div>
+-->
+                            <!-- menu -->
+                            <ul id="menu2">
+                                <li class="active" data-filter="all">
+                                    <a href="#">ALL</a>
+                                  </li>
+                                  <li class="" data-filter="1">
+                                      <a href="#">LIVING ROOM</a>
+                                  </li>
 
-                          <div class="tabs_">
-                              <a href="contact.html">CONTACT US</a>
-                          </div>
-                    </div>
-                     <!-- header end -->
-                </div>
+                                  <li class="" data-filter="2">
+                                      <a href="#">BEDROOM</a>
+                                  </li>
 
+                                  <li class="" data-filter="3">
+                                      <a href="#">KITCHEN</a>
+                                  </li>
 
-            </div><!-- homeHeader end -->
+                                  <li class="" data-filter="4">
+                                      <a href="#">BATHROOM</a>
+                                  </li>
 
-        </div> <!-- p-one end -->
+                                  <li class="" data-filter="5">
+                                      <a href="#">OTHER</a>
+                                  </li>
+                            </ul> <!-- mobile only end -->
+                        </div> <!--mobileMenu_ -->
+                     </nav>
+                </div><!-- header end -->
 
-
-        <!------------------------------------------------------------->
-        <!-- PAGE 2 -->
-        <!------------------------------------------->
-
-        <div id="p_two" class="expanded row columns">
-
+            </div> <!-- homeHeader end -->
             <!-- =================================== -->
             <!--- GALLERY --->
             <!-- =================================== -->
-            <div class="gal f-center">
-            <div id="gallery" class="expanded row columns">
+            <div id="gallery" class="row columns f-center">
 
-            <!-- Masonry Ben -->
-            <div class="section-grid" id="sec">
-                <div class="content">
-                    <div class="grid">
-                        <div class="grid__item wow slideInLeft" data-size="1280x857">
-                            <a href="images/large/001.jpg" class="img-wrap">
-                                <img src="images/gallery/001.jpg" alt="img01" />
-                                <div class="description description--grid">
-                                    <h3>Mother's Love</h3>
-                                    <p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>
-                                    <div class="details">
-                                        <ul>
-                                            <li> <input type="button" value="Add to cart" onclick="AddtoCart('mother','mothers love',50)"/></li>
-                                            <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                            <li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-                                            <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                            <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                            <li><i class="icon icon-iso"></i><span>80</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                <!-- Masonry Ben -->
+                <div class="grid filtr-container">
 
-                        <div class="grid__item wow slideInRight" data-size="1280x853">
-                            <a href="images/large/003.jpg" class="img-wrap">
-                                <img src="images/gallery/003.jpg" alt="img03" />
-                            </a>
-                        </div>
+                    <!-- Living Room -->
+                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="1, 5" data-sort="Living Room">
 
-                        <div class="grid__item wow slideInLeft" data-size="1280x1280">
-                            <a href="images/large/002.jpg" class="img-wrap">
-                                <img src="images/gallery/002.jpg" alt="img02" />
-                            </a>
-                        </div>
+                        <img src="images/gallery/GCH-2.jpg" alt="img03" />
 
-                        <div class="grid__item wow slideInRight">
-                            <a href="images/large/004.jpg" class="img-wrap">
-                                <img src="images/gallery/004.jpg" alt="img04" />
-                            </a>
-                        </div>
+                    </div>
 
-                        <div class="grid__item wow slideInLeft">
-                            <a href="images/large/005.jpg" class="img-wrap">
-                                <img src="images/gallery/005.jpg" alt="img05" />
-                            </a>
-                        </div>
+                    <!-- BedRoom -->
+                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="2" data-sort="Bedroom">
 
-                        <div class="grid__item wow slideInRight">
-                            <a href="images/large/006.jpg" class="img-wrap">
-                                <img src="images/gallery/006.jpg" alt="img06" />
-                            </a>
-                        </div>
+                        <img src="images/gallery/GCH-21.jpg" alt="img04" />
 
-                        <div class="grid__item wow slideInLeft">
-                            <a href="images/large/007.jpg" class="img-wrap">
-                                <img src="images/gallery/007.jpg" alt="img07" />
-                            </a>
-                        </div>
+                    </div>
 
-                        <div class="grid__item wow slideInRight">
-                            <a href="images/large/008.jpg" class="img-wrap">
-                                <img src="images/gallery/008.jpg" alt="img08" />
-                            </a>
-                        </div>
+                    <!-- Kitchen -->
+                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="3" data-sort="Kitchen">
 
-                        <div class="grid__item wow slideInLeft">
-                            <a href="images/large/009.jpg" class="img-wrap">
-                                <img src="images/gallery/009.jpg" alt="img09" />
-                            </a>
-                        </div>
+                        <img src="images/gallery/GCH-15.jpg" alt="img05" />
 
-                        <div class="grid__item wow slideInRight">
-                            <a href="images/large/010.jpg" class="img-wrap">
-                                <img src="images/gallery/010.jpg" alt="img10" />
-                            </a>
-                        </div>
-                    </div> <!-- grid end -->
+                    </div>
 
-                    <!-- preview -->
-                    <div class="preview center-c">
-                        <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
-                        <div class="description description--preview"></div>
-                    </div><!-- /preview -->
+                    <!-- Bathroom -->
+                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="4" data-sort="Bathroom">
 
-                </div> <!-- content end -->
-            </div> <!-- section-grid end -->
+                        <img src="images/gallery/GCH-24.jpg" alt="img03" />
+
+                    </div>
+
+                    <!-- Other -->
+                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="5" data-sort="Others">
+
+                        <img src="images/gallery/GCH-51.jpg" alt="img06" />
+
+                    </div>
+
+                </div> <!-- grid end -->
 
             </div> <!-- gallery end -->
-            </div> <!-- gal end -->
 
-        </div>
-
+        </div> <!-- p-one end -->
 
     </main>
     <!-- main content -->
@@ -470,118 +369,47 @@ function closeDiv() {
 
 
     <script src="js/app.js"></script>
-    <script>
-        function showDiv1() {
-            document.getElementById('wwd1').style.display = "inherit"; document.getElementById('BTN1').setAttribute("style","visibility:hidden");
-        }
 
-        function showDiv2() {
-            document.getElementById('wwd2').style.display = "inherit"; document.getElementById('BTN2').setAttribute("style","visibility:hidden");
-        }
-
-        function showDiv3() {
-            document.getElementById('wwd3').style.display = "inherit"; document.getElementById('BTN3').setAttribute("style","visibility:hidden");
-        }
+    <!----------------------------------------->
+    <!--MobileNav -->
+    <script src="stickynav/dist/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu2').slicknav({
+                label: '',
+                duration: 1000,
+                easingOpen: "easeOutBounce", //available with jQuery UI
+                prependTo:'#demo2'
+            });
+        });
     </script>
+
+    <!----------------------------------------->
+    <!--Filterizr -->
+    <script src="filterizr/filterizr/jquery.filterizr.js"></script>
+    <script src="filterizr/js/controls.js"></script>
+    <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
+
 
     <!----------------------------------------->
     <!-- Ben -->
-    <script src="ben/js/water.js"></script>
     <script src="ben/js/modernizr-custom.js"></script>
     <script src="ben/js/imagesloaded.pkgd.min.js"></script>
 	<script src="ben/js/masonry.pkgd.min.js"></script>
-	<script src="ben/js/classie.js"></script>
-	<script src="ben/js/main.js"></script>
-    <script src="ben/js/clipboard.min.js"></script>
-    <script>
-		(function() {
-			var support = { transitions: Modernizr.csstransitions },
-				// transition end event name
-				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
-				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-				onEndTransition = function( el, callback ) {
-					var onEndCallbackFn = function( ev ) {
-						if( support.transitions ) {
-							if( ev.target != this ) return;
-							this.removeEventListener( transEndEventName, onEndCallbackFn );
-						}
-						if( callback && typeof callback === 'function' ) { callback.call(this); }
-					};
-					if( support.transitions ) {
-						el.addEventListener( transEndEventName, onEndCallbackFn );
-					}
-					else {
-						onEndCallbackFn();
-					}
-				};
+<!--	<script src="ben/js/classie.js"></script>-->
 
-			new GridFx(document.querySelector('.grid'), {
-				imgPosition : {
-					x : -0.5,
-					y : 1
-				},
-				onOpenItem : function(instance, item) {
-					instance.items.forEach(function(el) {
-						if(item != el) {
-							var delay = Math.floor(Math.random() * 50);
-							el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-							el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-							el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
-							el.style.transform = 'scale3d(0.1,0.1,1)';
-							el.style.opacity = 0;
-						}
-					});
-				},
-				onCloseItem : function(instance, item) {
-					instance.items.forEach(function(el) {
-						if(item != el) {
-							el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
-							el.style.transition = 'opacity .4s, transform .4s';
-							el.style.WebkitTransform = 'scale3d(1,1,1)';
-							el.style.transform = 'scale3d(1,1,1)';
-							el.style.opacity = 1;
-
-							onEndTransition(el, function() {
-								el.style.transition = 'none';
-								el.style.WebkitTransform = 'none';
-							});
-						}
-					});
-				}
-			});
-		})();
-	</script>
-    <!----------------------------------------->
-    <!--Vegas-->
-<!--
-    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.js"></script>
-    <script>
-        $("#intro").vegas({
-            delay: 7000,
-            slides: [
-                {src: "images/img/home1.jpg"},
-                {src: "images/img/home3.jpg"},
-                {src: "images/img/home2.jpg"},
-
-            ],
-            overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/overlays/01.png'
-            });
-    </script>
--->
-    
     <!----------------------------------------->
     <!-- Smooth Scroll -->
     <script src="js/smoothPageScroll/jquery.scrollto.js"></script>
     <script src="js/smoothPageScroll/smoothScroll.js"></script>
 
-    <!----------------------------------------->
-    <!-- Two up -->
-    <script src="js/twoup/imagesloaded.pkgd.min.js"></script>
-<!--    <script src="js/twoup/hammer.min.js"></script>-->
-    <script src="js/twoup/sequence.min.js"></script>
-    <script src="js/twoup/sequence-theme.two-up.min.js"></script>
 
-    
 <!--------------------------------------------------------------->
 <!--------------------------------------------------------------->
 </body>

@@ -16,10 +16,10 @@
     });
 
     //bxSlider
-    $('.bxslider').bxSlider({
-        auto: true,
-        pause: 5000
-    });
+//    $('.bxslider').bxSlider({
+//        auto: true,
+//        pause: 5000
+//    });
 
     //WHAT WE DO - Click to reveal
 

@@ -1,0 +1,93 @@
+<!------------------------------------------------------------->
+<!-- =================================== -->
+<!--- HEADER --->
+<!-- =================================== -->
+<div id="nav-anchor"></div>
+
+<div class="expanded row columns homeHeader">
+
+    <!--LOGO - desktopOnly-->
+    <div class="logoHolder row columns">
+        <div class="logo f-center">
+            <p class="logoTitle black_">APARTMENT DETAILS</p>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div id="header" class="black_ f-center expanded row columns nav-cont">
+
+        <!-- Filter Controls - Simple Mode -->
+        <nav id="nav_" class="">
+
+            <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+for an unfiltered gallery and then the values of your categories to filter between them -->
+            <ul class="simplefilter head_ f-center div_ ul_">
+                  <li class="tabs_ active" data-filter="all">
+                      ALL
+                  </li>
+                  <li class="tabs_" data-filter="1">
+                      LIVING ROOM
+                  </li>
+
+                  <li class="tabs_" data-filter="2">
+                      BEDROOM
+                  </li>
+
+                  <li class="tabs_" data-filter="3">
+                      KITCHEN
+                  </li>
+
+                  <li class="tabs_" data-filter="4">
+                      BATHROOM
+                  </li>
+
+                  <li class="tabs_" data-filter="5">
+                      OTHER
+                  </li>
+
+            </ul><!-- head_ end -->
+         </nav>
+    </div><!-- header end -->
+
+    <!-- Filter Controls - Multifilter Mode -->
+    <div id="multifilter_" class="f-center expanded row columns">
+        <!-- A basic setup of multifilter controls, when the user toggles a category
+        the corresponding items are rendered or hidden -->
+        <ul class="multifilter">
+            <li data-multifilter="1">LIVING ROOM</li>
+            <li data-multifilter="2">BEDROOM</li>
+            <li data-multifilter="3">KITCHEN</li>
+            <li data-multifilter="4">BATHROOM</li>
+            <li data-multifilter="5">OTHER</li>
+        </ul>
+    </div>
+
+    <!-- Shuffle & Sort Controls -->
+    <div class="f-center expanded row columns">
+        <ul class="sortandshuffle">
+            Sort &amp; Shuffle controls:
+            <!-- Basic shuffle control -->
+            <li class="shuffle-btn" data-shuffle>Shuffle</li>
+            <!-- Basic sort controls consisting of asc/desc button and a select -->
+            <li class="sort-btn active" data-sortAsc>Asc</li>
+            <li class="sort-btn" data-sortDesc>Desc</li>
+            <select data-sortOrder>
+                <option value="domIndex">
+                    Position
+                </option>
+                <option value="sortData">
+                    Description
+                </option>
+            </select>
+        </ul>
+    </div>
+
+    <!-- Search control -->
+    <div class="f-center expanded row columns search-row">
+        <div class="sr_">
+            Search control:
+            <input type="text" class="filtr-search" name="filtr-search" data-search>
+        </div>
+    </div>
+
+</div><!-- homeHeader end -->

@@ -49,17 +49,7 @@ h1, h2, h3, h4, h5 {
         display: none;
     }
 
-    /* Small only */
-    @media screen and (max-width: 39.9375em) {
-        .mobileOnly {
-            display: block !important;
-        }
 
-        .desktopOnly {
-            display: none !important;
-        }
-
-    }
 
 main {
     height: auto;
@@ -272,8 +262,9 @@ h2 {
  * =====\\============//===== */
 .homeHeader {
         z-index: 999;
-        min-height: 150px;
-        border-bottom: #0e0e0e solid .5px;
+        height: auto;
+        min-height: 95px;
+/*        border-bottom: #0e0e0e solid .5px;*/
     }
 
     .homeHeader .logoTitle {
@@ -304,43 +295,26 @@ h2 {
             border: #0e0e0e solid 2px;
           }
 
-    .homeHeader #header {
-        height: 60px;
-        width: 100%;
+    .homeHeader .tabs_ a {
+        position: relative;
+        margin: 0 auto;
+        padding: 10px 25px;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #000;
+        text-transform: uppercase;
     }
 
-        .homeHeader #header .head_{
-            height: 60px;
-            margin: 0!important;
-        }
+    .tabs-title>a[aria-selected=true] {
+        background: #e6e6e6;
+        border: solid 1px #0e0e0e;
+    }
 
-            #header .head_.ul_{
 
-            }
 
-            #header .head_ .tabs_  {
-                position: relative;
-                margin: 0 auto;
-                padding: 10px 25px;
-                font-size: 1rem;
-                font-weight: 700;
-                line-height: 1.2;
-/*                letter-spacing: -.01rem;*/
-                font-weight: 500;
-                color: #000;
-            }
 
-            #header .head_ .tabs_ a.select_ {
-                border: solid 1px #0e0e0e;
-                background: #fff;
-                color: #0e0e0e;
-            }
 
-            a.nav-active {
-                border: solid 1px #0e0e0e;
-                background: #fff;
-                color: #0e0e0e;
-            }
 /*MOBILE MENU*/
 .mobileMenu_ {
     height: auto;
@@ -354,8 +328,9 @@ h2 {
 }
 
 .mobileOnly #menu2 {
+    position: fixed;
 /*    width: 10%;*/
-/*    top: 0;*/
+    top: 50px;
 }
 
 
@@ -368,9 +343,6 @@ h2 {
 .divs_ {
     display: none !important;
 }
-
-
-
 
 ol, ul {
 	list-style: none;
@@ -408,32 +380,99 @@ blockquote:before, blockquote:after {
 /* ===\\================//=== *
  * ====\\===PAGE 1 ===//==== *
  * =====\\============//===== */
+.tabs-content {}
 
+#descr_, #photos_ {
+    height: auto;
+    min-height: 100vh;
+}
+
+/*What you get */
+#descr_ {}
+
+
+
+/*Photos*/
+#photos_ {}
+
+/*FilterHeader*/
+#header, nav, #menu2 {
+    height: auto;
+}
+
+nav {}
+
+#menu2 {
+    margin: 0 auto;
+}
+
+    #menu2 .tabs_ {
+            position: relative;
+            margin: 0 auto;
+            padding: 10px 25px;
+            font-size: .9rem;
+            line-height: 1.2;
+    /*                letter-spacing: -.01rem;*/
+            font-weight: 500;
+            color: #000;
+        }
+
+        #menu2 .tabs_.select_ {
+            border: solid 0px #fff;
+            background: #e6e6e6;
+            color: #0e0e0e;
+        }
+
+        a.nav-active {
+            border: solid 1px #0e0e0e;
+            background: #fff;
+            color: #0e0e0e;
+        }
+
+
+/*gallery*/
 #gallery {
-    min-height: calc(100vh - 150px);
+/*    min-height: calc(100vh - 150px);*/
+    min-height: 100vh;
     height: auto;
     width: 80%;
     max-width: 1300px;
     min-width: 950px
 }
 
-    /* Small only */
-    @media screen and (max-width: 39.9375em) {
-        #gallery {
-            width: 100%;
-            max-width: 400px;
-            min-width: 250px;
-        }
-    }
 
-    /* Medium only */
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-        #gallery {
-            width: 90%;
-            max-width: 700px;
-            min-width: 500px;
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -30,7 +30,7 @@
 	<link rel="stylesheet" type="text/css" href="ben/css/style2.css" />
 
     <!-- mobileonly -->
-<!--    <link rel="stylesheet" type="text/css" href="stickynav/style.css" />-->
+    <link rel="stylesheet" type="text/css" href="stickynav/style.css" />
     <link rel="stylesheet" type="text/css" href="stickynav/dist/slicknav.css" />
 
     <!-- filterizr -->
@@ -38,6 +38,7 @@
 
     <!-- custom -->
     <link rel="stylesheet" type="text/css" href="css/styles2.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/styles_mobile.css" />
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css" media="all" />
 
     <style>
@@ -195,6 +196,8 @@ function closeDiv() {
         <!------------------------------------------->
         <div id="p_one" class="expanded row columns clearfix">
 
+            <div></div>
+
 
             <!-- =================================== -->
             <!--- HEADER --->
@@ -210,7 +213,33 @@ function closeDiv() {
                     </div>
                 </div>
 
-                <!-- NAV -->
+                <!-- tabs -->
+                <ul class="tabs f-center" data-tabs id="apart-tabs">
+                    <li class="tabs-title tabs_ is-active">
+                      <a href="#descr_" aria-selected="true">What you Get</a>
+                    </li>
+                    <li class="tabs-title tabs_">
+                      <a href="#photos_">Photos</a>
+                    </li>
+                </ul>
+            </div> <!-- homeHeader end -->
+
+            <!-- =================================== -->
+            <!-- CONTENT -->
+            <!-- =================================== -->
+
+            <div class="tabs-content" data-tabs-content="apart-tabs">
+
+              <!-- ========= WHAT YOU GET ========= -->
+              <div class="tabs-panel is-active" id="descr_">
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+              </div>
+
+
+              <!-- ========= PHOTOS ========= -->
+              <div class="tabs-panel" id="photos_">
+
+                <!-- ========= gallery ========= -->
                 <div id="header" class="black_ f-center expanded row columns nav-cont">
 
                     <!-- Filter Controls - Simple Mode -->
@@ -219,7 +248,7 @@ function closeDiv() {
                         <!--- DESKTOP ONLY --->
                         <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
             for an unfiltered gallery and then the values of your categories to filter between them -->
-                        <ul class="simplefilter desktopOnly head_ f-center div_ ul_">
+                        <ul id="menu2" class="simplefilter head_ f-center div_ ul_">
                               <li class="tabs_ active" data-filter="all">
                                   ALL
                               </li>
@@ -256,6 +285,7 @@ function closeDiv() {
                             </div>
 -->
                             <!-- menu -->
+<!--
                             <ul id="menu2">
                                 <li class="active" data-filter="all">
                                     <a href="#">ALL</a>
@@ -279,58 +309,68 @@ function closeDiv() {
                                   <li class="" data-filter="5">
                                       <a href="#">OTHER</a>
                                   </li>
-                            </ul> <!-- mobile only end -->
+                            </ul>
+-->
+
+                            <!-- mobile only end -->
                         </div> <!--mobileMenu_ -->
                      </nav>
                 </div><!-- header end -->
 
-            </div> <!-- homeHeader end -->
-            <!-- =================================== -->
-            <!--- GALLERY --->
-            <!-- =================================== -->
-            <div id="gallery" class="row columns f-center">
 
-                <!-- Masonry Ben -->
-                <div class="grid filtr-container">
+                <!-- ========= gallery ========= -->
+                <div id="gallery" class="row columns f-center">
 
-                    <!-- Living Room -->
-                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="1, 5" data-sort="Living Room">
+                    <!-- Masonry Ben -->
+                    <div class="grid filtr-container">
 
-                        <img src="images/gallery/GCH-2.jpg" alt="img03" />
+                        <!-- Living Room -->
+                        <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="1, 5" data-sort="Living Room">
 
-                    </div>
+                            <img src="images/gallery/GCH-2.jpg" alt="img03" />
 
-                    <!-- BedRoom -->
-                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="2" data-sort="Bedroom">
+                        </div>
 
-                        <img src="images/gallery/GCH-21.jpg" alt="img04" />
+                        <!-- BedRoom -->
+                        <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="2" data-sort="Bedroom">
 
-                    </div>
+                            <img src="images/gallery/GCH-21.jpg" alt="img04" />
 
-                    <!-- Kitchen -->
-                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="3" data-sort="Kitchen">
+                        </div>
 
-                        <img src="images/gallery/GCH-15.jpg" alt="img05" />
+                        <!-- Kitchen -->
+                        <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="3" data-sort="Kitchen">
 
-                    </div>
+                            <img src="images/gallery/GCH-15.jpg" alt="img05" />
 
-                    <!-- Bathroom -->
-                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="4" data-sort="Bathroom">
+                        </div>
 
-                        <img src="images/gallery/GCH-24.jpg" alt="img03" />
+                        <!-- Bathroom -->
+                        <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="4" data-sort="Bathroom">
 
-                    </div>
+                            <img src="images/gallery/GCH-24.jpg" alt="img03" />
 
-                    <!-- Other -->
-                    <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="5" data-sort="Others">
+                        </div>
 
-                        <img src="images/gallery/GCH-51.jpg" alt="img06" />
+                        <!-- Other -->
+                        <div class="small-12 medium-4 large-3 grid__item wow filtr-item" data-category="5" data-sort="Others">
 
-                    </div>
+                            <img src="images/gallery/GCH-51.jpg" alt="img06" />
 
-                </div> <!-- grid end -->
+                        </div>
 
-            </div> <!-- gallery end -->
+                    </div> <!-- grid end -->
+
+                </div> <!-- gallery end -->
+
+
+              </div> <!-- photos end -->
+
+
+
+            </div> <!-- tabs-content end -->
+
+
 
         </div> <!-- p-one end -->
 

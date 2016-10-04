@@ -9,6 +9,24 @@
             max-width: 700px;
             min-width: 500px;
         }
+    .content {
+            padding: 1em 0 3em;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+
+        .grid {
+            position: relative;
+            margin: 0 auto;
+            width: 100% !important;
+        }
+
+        .grid__item {
+            width: 50%;
+            height: auto;
+            padding: 10px !important;
+        }
 }
 /*-------------------------------------------------------*/
 /*SMALL*/
@@ -30,12 +48,31 @@
         width: 80%;
     }
 
+    /* Photos*/
     #gallery {
             width: 100%;
             max-width: 400px;
             min-width: 250px;
         }
 
+    .content {
+            padding: 1em 0 3em;
+            width: 100%;
+            margin: 0 auto;
+        }
 
-}
+
+        .grid {
+            position: relative;
+            margin: 0 auto;
+            width: 100% !important;
+        }
+
+        .grid__item {
+            width: 100%;
+            height: auto;
+            padding: 10px 20px !important;
+        }
+
+
 

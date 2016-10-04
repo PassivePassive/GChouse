@@ -18,8 +18,10 @@ $(document).ready(function(){
             var div_top = $('#nav-anchor').offset().top;
                 if (window_top > div_top) {
                     $('.homeHeader').addClass('stick');
+                    $('#header').addClass('stick');
                 } else {
                     $('.homeHeader').removeClass('stick');
+                    $('#header').removeClass('stick');
                 }
         });
 
